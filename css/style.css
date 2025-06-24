@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header,
+footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.bio {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.bio h2 {
+  color: #111111;
+  margin-bottom: 0.5rem;
+}
+
+.bio p {
+  margin-bottom: 1rem;
+}
+
+.iconos {
+  margin-top: 1rem;
+}
+
+.iconos a {
+  color: #444;
+  margin-right: 1rem;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.iconos a:hover {
+  color: #0a0909;
+}
+
+.tarjeta-con-foto {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta.estilo-gladys {
+  position: relative;
+  background: linear-gradient(135deg, #d1d2d4, #a8aaac, #676767);
+  width: 380px;
+  height: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+  border-radius: 12px;
+}
+
+
+.tarjeta.estilo-gladys img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 5px solid white;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+
+.tarjeta.estilo-gladys img:hover {
+  transform: scale(1.05);
+  filter: brightness(95%) grayscale(10%);
+}
