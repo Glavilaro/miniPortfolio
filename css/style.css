@@ -7,15 +7,32 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: #5c5b5b;
 }
 
+/* Encabezado y pie */
 header,
 footer {
-  background-color: #444;
+  background-color: #5c5b5b;
   color: white;
   text-align: center;
   padding: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  border-radius: 50%;
+  border: 0.5px solid white;
+  object-fit: cover;
 }
 
 .contenedor {
@@ -75,21 +92,19 @@ footer {
   border-radius: 12px;
 }
 
-
 .tarjeta.estilo-gladys img {
   width: 300px;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   border-radius: 12px;
   border: 5px solid white;
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, filter 0.3s ease;
 }
-
 
 .tarjeta.estilo-gladys img:hover {
   transform: scale(1.05);
